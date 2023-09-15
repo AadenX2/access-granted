@@ -3,7 +3,7 @@ import random
 
 with open('C:\\Users\\WHATu\\OneDrive\\Documents\\Visual Studio 2022\\aadens_code\\new_code\\countries.txt', 'r') as file:
     countries = file.read().splitlines()
-from art import *
+
 class Color:
     RESET = "\033[0m"
     RED = "\033[91m"
@@ -17,9 +17,6 @@ class Color:
 random_number = random.randint(0, 100)
 name = input("What is your name? ")
 
-if name.lower() in ['u dumb', 'you dumb', 'dummy', 'you dum', 'u dum']:
-    cool = text2art("U dumber")
-    print
 
 if name.lower() == "yes":
     U_sure = input("Bro we just said enter a name. Is u has za dum?! ")
