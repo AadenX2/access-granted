@@ -1,0 +1,135 @@
+import time
+import random
+
+with open('C:\\Users\\WHATu\\OneDrive\\Documents\\Visual Studio 2022\\aadens_code\\new_code\\countries.txt', 'r') as file:
+    countries = file.read().splitlines()
+from art import *
+class Color:
+    RESET = "\033[0m"
+    RED = "\033[91m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    BLUE = "\033[94m"
+    PURPLE = "\033[95m"
+    CYAN = "\033[96m"
+    WHITE = "\033[97m"
+
+random_number = random.randint(0, 100)
+name = input("What is your name? ")
+
+if name.lower() in ['u dumb', 'you dumb', 'dummy', 'you dum', 'u dum']:
+    cool = text2art("U dumber")
+    print
+
+if name.lower() == "yes":
+    U_sure = input("Bro we just said enter a name. Is u has za dum?! ")
+    if U_sure.lower() == "yes":
+        print("no mo aces fo u... u jus 2 smort hheaeaa")
+        if U_sure.lower() == "no you":
+         hehe = text2art("boi wat")
+         print(hehe)
+    if U_sure.lower() == "no":
+        print("So you not dumb eh? ok we'll see hehe.")
+        time.sleep(1.5)
+        math = input(Color.BLUE + "wat 2+2? " + Color.RESET)
+        if math == "22":
+            print("ok u got luk ")
+            time.sleep(2)
+            seconds_question = input(Color.BLUE + "Ok now wat 3+3?" + Color.RESET)
+            if seconds_question == "6":
+                print("how u got it? ")
+                time.sleep(1.5)
+                print("Ok last question...")
+                time.sleep(1.5)
+                last_question = input(Color.BLUE + "Do fish ever get thirsty? " + Color.RESET)
+                if last_question == "yes":
+                  print("haha trick question because I don't know hehe ")
+                  time.sleep(1)
+                  print(Color.BLUE + "Ok u win bro, idk how u win but i did in exactly 5.3452234245252352352 seconds you will get access to the nuke hehe" + Color.RESET)
+                  time.sleep(5.3452234245252352352)
+                  print("Full access privliges granted")
+                  time.sleep(10)
+                  print(Color.GREEN + "You succsesfully Got the: 4th ending! Horray!" + Color.RESET)
+                
+                if last_question not in ["yes"]:
+                    print(Color.RED + "bro u do not now!1!11" + Color.RESET)
+
+            if seconds_question.lower() not in ["6"]:
+                print(Color.RED + "trik ques haha answer is 6 bc i sad so !? " + Color.RESET)
+
+        if math.lower() not in ["22"]:
+            print(Color.RED + "haha you realy not smort" + Color.RESET)
+else:
+    if name.lower() not in ['joe', 'aaden', 'karen', 'bob', 'omar']:
+        print(Color.BLUE + "ya so maybe u is dum hehe" + Color.RESET)
+        time.sleep(1.5)
+        print(Color.BLUE + "No mo aces den he" + Color.RESET)
+        time.sleep(2)
+        print(Color.RED + "Access denied. comment (No dumy alowed launch nuke he)" + Color.RESET)
+        time.sleep(10)
+        print(Color.CYAN + "Congrats you got ending 3!!!1" + Color.RESET)
+
+if name.lower() in ['joe', 'aaden', 'karen', 'bob', 'omar']:
+    print(Color.GREEN + "Access Granted" + Color.RESET)
+    time.sleep(1.5)
+    launch_nuke = input(Color.BLUE + "It's possible for you to launch a nuke. Do you want to launch one? " + Color.RESET)
+    
+    if launch_nuke.lower() == "yes":
+        country_name = input("Which country? ").lower()  
+        if country_name in [country.lower() for country in countries]: 
+            confirmation = input(f"Are you sure you want to send a nuke to {country_name}? ")
+            if confirmation.lower() == "yes":
+                print("Countdown till launch, starting...")
+                print(Color.RED + "===================================" + Color.RESET)
+                time.sleep(2.5)
+                for countdown in range(5, 0, -1):
+                    print(Color.YELLOW + f"Launch off in {countdown}" + Color.RESET)
+                    time.sleep(1)
+                
+                print(Color.RED + f"You've failed the test by trying to launch a nuke to {country_name}. Stripping all privileges" + Color.RESET)
+                time.sleep(3)
+                print(Color.RED + "Access privileges stripped." + Color.RESET)
+            if random_number <= 25:
+             print(Color.GREEN + "Launch safely aborted" + Color.RESET)
+            
+            else:
+                if random_number >= 25:
+                    print(Color.RED + "Warning Warning, The launch was not aborted safely, I repeat, The launch was not aborted safely" + Color.RESET)
+                    time.sleep(1.5)
+                    print(Color.RED + "evacuate the area immediately!" + Color.RESET)
+                    for countdown in range(12, 0, -1):
+                        print(Color.RED + f"Expected time before explosion: {countdown}!" + Color.RESET)
+                        time.sleep(1)
+                        print(Color.RED + " (explosion noises) " + Color.RESET)
+                        print(Color.RED + "you ded" + Color.RESET)
+                        time.sleep(10)
+                        print(+Color.GREEN + "You got ending 5!!1! Horray!11" + Color.RESET)
+        else:
+            print(Color.RED + "Invalid country name." + Color.RESET)
+    
+    elif launch_nuke.lower() == "no":
+        print(Color.GREEN + "You passed the test by not launching a nuke. Giving full command privileges" + Color.RESET)
+        time.sleep(2)
+        print(Color.GREEN + "Full Access privileges granted." + Color.RESET)
+        time.sleep(10)
+        print(Color.BLUE + "you got ending 3" + Color.RESET)
+    else:
+        print("Invalid input. Please enter 'yes' or 'no' for nuke launch decision.")
+
+else:
+    print(Color.RED + "Access Denied" + Color.RESET)
+
+while True:
+    user_input = input("Try again? ")
+    if user_input.lower() == "yes":
+        new_name = input("What is your name?: ")
+     
+        if new_name.lower() in ['joe', 'aaden', 'karen', 'bob', 'omar']:
+            print(Color.GREEN + "Access Granted." + Color.RESET)
+            time.sleep(10)
+            print(Color.GREEN + "You got ending 1 Congrats!!!11!" + Color.RESET)
+            break
+        else:
+            print(Color.RED + "Access Denied." + Color.RESET)
+    else:
+        break
